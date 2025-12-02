@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Debjit Mondal | Portfolio</title>
+  <style>
+    :root{--nav-width:260px;--blue:#49806e;--light-blue:#74cba4;--accent:#1e4fa9;--green:#d7f5d0}
+    *{box-sizing:border-box}
+    body { margin: 0; font-family: Arial, sans-serif; background: var(--green); color: #222; }
+    /* Left ribbon */
+    nav.ribbon{width:var(--nav-width); position:fixed; left:0; top:0; bottom:0; background:var(--blue); color:#fff; padding:28px 18px; display:flex; flex-direction:column; align-items:center}
+    nav.ribbon .photo{width:140px; height:140px; border-radius:50%; overflow:hidden; border:4px solid #fff; box-shadow:0 6px 18px rgba(0,0,0,0.18)}
+    nav.ribbon img{width:100%; height:100%; object-fit:cover; display:block}
+    nav.ribbon h3{font-size:28px; margin:12px 0 6px; text-align:center}
+    nav.ribbon p.quote{font-size:20px; text-align:center; color:#e8f3ff; margin:0 0 24px}
+    nav.ribbon ul{list-style:none; padding:10px 0; width:100%}
+    nav.ribbon ul li{margin:10px 0}
+    nav.ribbon a{color:#fff; text-decoration:none; padding:8px 12px; display:block; border-radius:6px}
+    nav.ribbon ul li{margin:10px 0}
+    nav.ribbon a{color:#fff; text-decoration:none; padding:8px 12px; display:block; border-radius:6px}
+    nav.ribbon a:hover{background:rgba(255,255,255,0.08)}
+    nav.ribbon .resume{margin-top:auto; width:100%; text-align:center}
+    nav.ribbon .resume a{background:#0b3e91; padding:10px 14px; display:inline-block; border-radius:6px}
+
+    /* Main content area */
+    .main{margin-left:var(--nav-width); min-height:200vh}
+    /* heading ribbon */
+    header.top-ribbon{background:var(--light-blue); padding:50px 20px; text-align:center}
+    header.top-ribbon .quote{font-size:28px; color:#06486b; margin:0}
+
+    /* centered white card */
+    .card-wrap{padding:40px 20px;}
+    .card{background:#fff; max-width:880px; margin:40px auto; padding:28px 30px; border-radius:12px; box-shadow:2px 10px 30px rgba(0,0,0,0.08);}
+    h2.section-title{color:var(--accent);text-align:center; margin-top:0}
+
+    .skills span{display:inline-block;background:#e8f7ea;padding:8px 12px;margin:6px;border-radius:6px}
+    .project{margin-bottom:18px;padding:14px;border-radius:8px;background:#fbfdff;border:1px solid #eef5fb}
+    .project button{background:var(--accent);color:#fff;border:none;padding:8px 12px;border-radius:6px;cursor:pointer}
+
+    /* responsive */
+    @media (max-width:900px){
+      nav.ribbon{position:relative;width:100%;flex-direction:row;gap:12px;padding:12px;align-items:center}
+      nav.ribbon ul{display:flex; gap:8px; overflow:auto}
+      .main{margin-left:0}
+      .card{margin:-20px 12px 20px}
+    }
+  </style>
+</head>
+<body>
+  <nav class="ribbon">
+    <div class="photo">
+      <img src="Photograph.jpg" alt="Debjit Mondal" />
+    </div>
+    <h3>Debjit Mondal</h3>
+    
+
+    <ul>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="resume">
+      <a href="Debjit Mondal-BA.pdf" download>Download Resume</a>
+    </div>
+  </nav>
+
+  <div class="main">
+    <header class="top-ribbon">
+      <p class="quote">Hi, I’m Debjit — I turn data into decisions</p>
+      <p>I build dashboards, automate reporting, and deliver actionable insights using SQL, Python and Power BI. I enjoy end-to-end analytics: data wrangling → analysis → visualization → storytelling.</p>
+    </header>
+
+    <div class="card-wrap">
+
+      <!-- Education Card -->
+      <div class="card">
+        <div style="background:#0b6b3a; padding:14px 15px; border-radius:6px; color:#fff; margin:0 auto 20px; max-width:880px; text-align:center;">
+          <h2 style="margin:0; display:flex; align-items:center; justify-content:center; gap:10px;"><img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png" width="26"> Education</h2>
+        </div>
+        <section id="education">
+          <h3>1. Bengal Institute of Business Studies</h3>
+          <p>PGP in Business Analytics & Data Science - 69%</p>
+          <h3>2. RCC Institute of Information Technology</h3>
+          <p>Electrical Engineering - 8.34</p>
+          <h3>3. Sitakundu Vidyayatan</h3>
+          <p>W.B.C.H.S.E - 61%</p>
+          <h3>4. Baruipur High School</h3>
+          <p>W.B.B.S.E - 69%</p>
+        </section>
+      </div>
+
+      <!-- Experience Card -->
+      <div class="card">
+        <div style="background:#0b6b3a; padding:14px 15px; border-radius:6px; color:#fff; margin:0 auto 20px; max-width:880px; text-align:center;">
+          <h2 style="margin:0; display:flex; align-items:center; justify-content:center; gap:10px;"><img src="https://cdn-icons-png.flaticon.com/512/942/942748.png" width="26"> Experience</h2>
+        </div>
+        <section id="experience">
+          <div class="project">
+            <h3>Data Analyst | Sumcon Infraventures Private Limited</h3>
+            <p><strong>June 2023 – Present | Kolkata, India</strong></p>
+            <ul>
+              <li>Managed and automated data workflows in Google Sheets and Smartsheet.</li>
+              <li>Created workflow automations in AppSheet to streamline operations.</li>
+              <li>Collaborated with project, engineering, and procurement teams to analyse data and prepare reports.</li>
+              <li>Improved processes by identifying gaps and supporting procurement analysis.</li>
+            </ul>
+          </div>
+
+          <div class="project">
+            <h3>Business Analytics Intern | Array Innovative Private Limited</h3>
+            <p><strong>Jan 2023 – May 2023 | Remote</strong></p>
+            <ul>
+              <li>Conducted global and Indian market research on the SaaS industry.</li>
+              <li>Analyzed collected data and prepared statistical presentations and reports.</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+
+      <!-- Skills Card -->
+      <div class="card">
+        <div style="background:#0b6b3a; padding:14px 15px; border-radius:6px; color:#fff; margin:0 auto 20px; max-width:880px; text-align:center;">
+          <h2 style="margin:0; display:flex; align-items:center; justify-content:center; gap:10px;"><img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" width="26"> Skills</h2>
+        </div>
+        <section id="skills">
+          <div class="skills">
+            <span><img src="https://cdn-icons-png.flaticon.com/512/732/732220.png" width="22"> Excel</span>
+            <span><img src="https://www.gstatic.com/images/branding/product/1x/sheets_48dp.png" width="22"> Google Sheets</span>
+            <span><img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/New_Power_BI_Logo.svg" width="22"> Power BI</span>
+            <span><img src="https://cdn-icons-png.flaticon.com/128/4248/4248443.png" width="22"> SQL</span>
+            <span><img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" width="22"> Python</span>
+            <span><img src="https://cdn-icons-png.flaticon.com/512/2103/2103633.png" width="22"> Machine Learning</span>
+          </div>
+        </section>
+      </div>
+
+      <!-- Projects Card -->
+      <div class="card">
+        <div style="background:#0b6b3a; padding:14px 15px; border-radius:6px; color:#fff; margin:0 auto 20px; max-width:880px; text-align:center;">
+          <h2 style="margin:0; display:flex; align-items:center; justify-content:center; gap:10px;"><img src="https://cdn-icons-png.flaticon.com/512/9068/9068834.png" width="26"> Projects</h2>
+        </div>
+        <section id="projects">
+          <div class="project">
+            <h3>Car Price Prediction</h3>
+            <p>Built a Python-based ML model to predict car prices using regression and feature engineering.</p>
+            <a href="car_price.zip" download><button>Download Project</button></a>
+          </div>
+
+          <div class="project">
+            <h3>Sales Dashboard using Power BI</h3>
+            <p>Interactive dashboard combining multiple data sources with DAX measures.</p>
+            <a href="sales_dashboard.pbix" download><button>Download Project</button></a>
+          </div>
+
+          <div class="project">
+            <h3>Automated ERP System (AppSheet & G-Sheet)</h3>
+            <p>Automated workflows and operations management system using AppSheet.</p>
+            <a href="erp_document.pdf" download><button>Download Project</button></a>
+          </div>
+        </section>
+      </div>
+
+      <!-- Contact Card -->
+      <div class="card">
+        <div style="background:#0b6b3a; padding:14px 15px; border-radius:6px; color:#fff; margin:0 auto 20px; max-width:880px; text-align:center;">
+          <h2 style="margin:0; display:flex; align-items:center; justify-content:center; gap:10px;"><img src="https://cdn-icons-png.flaticon.com/512/561/561127.png" width="26"> Contact</h2>
+        </div>
+        <section id="contact">
+          <p>Email: mondalrudra383@gmail.com</p>
+          <p>Phone: +91 7687908719</p>
+          <p>Address: Sukantapally, Madarat, Baruipur, Kolkata - 700144</p>
+        </section>
+      </div>
+
+    </div>
+
+    <div style="text-align:center; font-size:28px; margin:40px 0; color:var(--accent);">
+      <p>Thank You for Visiting</p>
+    </div>
+  </div>
+</body>
+</html>
