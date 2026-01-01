@@ -45,6 +45,71 @@
       .main{margin-left:0}
       .card{margin:-20px 12px 20px}
     }
+
+    /* Certification slider (CSS only with Next button) */
+.cert-container {
+  text-align: center;
+  position: relative;
+}
+
+.cert-container input {
+  display: none;
+}
+
+.cert-slide {
+  display: none;
+}
+
+.cert-slide img {
+  width: 230px;
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  margin-bottom: 14px;
+}
+
+.cert-slide h3 {
+  margin: 6px 0;
+  color: #0b3e91;
+}
+
+.cert-slide p {
+  margin: 0;
+  font-size: 15px;
+  color: #333;
+}
+
+/* Slide visibility */
+#cert1:checked ~ .slides .slide1,
+#cert2:checked ~ .slides .slide2,
+#cert3:checked ~ .slides .slide3, 
+#cert4:checked ~ .slides .slide4,
+#cert5:checked ~ .slides .slide5,
+#cert6:checked ~ .slides .slide6,
+#cert7:checked ~ .slides .slide7,
+#cert8:checked ~ .slides .slide8,
+#cert9:checked ~ .slides .slide9,
+#cert10:checked ~ .slides .slide10,
+#cert11:checked ~ .slides .slide11,
+#cert12:checked ~ .slides .slide12 {
+  display: block;
+}
+
+/* Next button */
+.cert-nav {
+  margin-top: 18px;
+}
+
+.cert-nav label {
+  background: #0b3e91;
+  color: #fff;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  display: inline-block;
+}
+
   </style>
 </head>
 <body>
@@ -57,6 +122,7 @@
 
     <ul>
       <li><a href="#education">Education</a></li>
+      <li><a href="#certifications">Certification</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#experience">Experience</a></li>
@@ -92,6 +158,154 @@
           <p>W.B.B.S.E - 69%</p>
         </section>
       </div>
+
+      <!-- Certification Section -->
+    <div class="card" id="certifications">
+        <div style="background:#0b6b3a; padding:14px; border-radius:6px; color:#fff; text-align:center; margin-bottom:20px;">
+        <h2 style="margin:0;">Certifications</h2>
+        </div>
+
+  <div class="cert-container">
+
+    <!-- Hidden radio buttons -->
+    <input type="radio" name="cert" id="cert1" checked>
+    <input type="radio" name="cert" id="cert2">
+    <input type="radio" name="cert" id="cert3">
+    <input type="radio" name="cert" id="cert4">
+    <input type="radio" name="cert" id="cert5">
+    <input type="radio" name="cert" id="cert6">
+    <input type="radio" name="cert" id="cert7">
+    <input type="radio" name="cert" id="cert8">
+    <input type="radio" name="cert" id="cert9">
+    <input type="radio" name="cert" id="cert10">
+    <input type="radio" name="cert" id="cert11">
+    <input type="radio" name="cert" id="cert12">
+
+    <div class="slides">
+
+      <!-- Certificate 1 -->
+      <div class="cert-slide slide1">
+        <img src="CourseCertificate - IFACET IITK_page-0001.jpg" alt="Machine Learning Certificate">
+        <h3>Winter Training Program 2022-23</h3>
+        <p>End-to-end analytics training covering Python & Machine Learning</p>
+        <div class="cert-nav">
+          <label for="cert2">Next</label>
+        </div>
+      </div>
+
+      <!-- Certificate 2 -->
+      <div class="cert-slide slide2">
+        <img src="Debjit-Mondal- PBI Certificate_page-0001.jpg" alt="Power BI Certificate">
+        <h3>Advanced Excel & Power BI Certification</h3>
+        <p>Advanced Formulas with Interactive dashboards, DAX measures, data modeling, and reporting best practices.</p>
+        <div class="cert-nav">
+          <label for="cert3">Next</label>
+        </div>
+      </div>
+
+      <!-- Certificate 3 -->
+      <div class="cert-slide slide3">
+        <img src="IBM Developer Skills Network DB0101EN Certificate _ BIBS_page-0001.jpg" alt="SQL Certification">
+        <h3>SQL and Relational Databases</h3>
+        <p>Data querying, table design, joins, and database management principles.</p>
+        <div class="cert-nav">
+          <label for="cert4">Next</label>
+        </div>
+      </div>
+
+      <!-- Certificate 4 -->
+      <div class="cert-slide slide4">
+        <img src="Python Certificate.jpeg" alt="Python Certification">
+        <h3>Python Basics for Data Science</h3>
+        <p>Python Basics for Data Science, focusing on data manipulation, analysis, and problem solving.</p>
+        <div class="cert-nav">
+          <label for="cert5">Next</label>
+        </div>
+      </div>
+
+      <!-- Certificate 5 -->
+      <div class="cert-slide slide5"> 
+        <img src="R Certificate.jpg" alt="R Certification">
+        <h3>R Basics for Data Science</h3>
+        <p>R Basics for Data Science, covering data manipulation, basic statistical analysis, and data visualization.</p>
+        <div class="cert-nav">
+          <label for="cert6">Next</label>
+        </div>
+      </div>
+
+      <!-- Certificate 6 -->
+      <div class="cert-slide slide6"> 
+        <img src="Data Viz R.jpg" alt="R Certification">
+        <h3>Data Vizualization with R</h3>
+        <p>Data Visualization with R, focusing on creating clear and impactful charts and insights using R and data visualization libraries.</p>
+        <div class="cert-nav">
+          <label for="cert7">Next</label>
+        </div>
+      </div>
+
+      <!-- Certificate 7 -->
+      <div class="cert-slide slide7"> 
+        <img src="R with DB.jpg" alt="R Certification">
+        <h3>Using R with Databases</h3>
+        <p>Focusing on connecting to databases, extracting data, and performing analysis using SQL and R together.</p>
+        <div class="cert-nav">
+          <label for="cert8">Next</label>
+        </div>
+      </div>
+
+      <!-- Certificate 8 -->
+      <div class="cert-slide slide8"> 
+        <img src="ML using R.jpg" alt="R Certification">
+        <h3>Machine Learning using R</h3>
+        <p>Practical experience in data analysis, model building, evaluation, and predictive techniques.</p>
+        <div class="cert-nav">
+          <label for="cert9">Next</label>
+        </div>
+      </div>
+
+      <!-- Certificate 9 -->
+      <div class="cert-slide slide9"> 
+        <img src="Statistics Certification_page-0001.jpg" alt="Statistics Certification">
+        <h3>Statistics For Data Analysis</h3>
+        <p>Covering descriptive statistics, probability, hypothesis testing, and data-driven decision making.</p>
+        <div class="cert-nav">
+          <label for="cert10">Next</label>
+        </div>
+      </div>
+
+      <!-- Certificate 10 -->
+      <div class="cert-slide slide10"> 
+        <img src="Big data Certification_page-0001.jpg" alt="Big Data Certification">
+        <h3>Big data Fundamentals</h3>
+        <p>Covering core concepts of large-scale data processing, storage systems, and distributed computing frameworks.</p>
+        <div class="cert-nav">
+          <label for="cert11">Next</label>
+        </div>
+      </div>
+
+      <!-- Certificate 11 -->
+      <div class="cert-slide slide11"> 
+        <img src="hadoop 101_page-0001.jpg" alt="Hadoop Certification">
+        <h3>Hadoop Fundamentals</h3>
+        <p>Covering HDFS, MapReduce, and the basics of distributed data processing for large-scale datasets.</p>
+        <div class="cert-nav">
+          <label for="cert12">Next</label>
+        </div>
+      </div>
+
+      <!-- Certificate 12 -->
+      <div class="cert-slide slide12"> 
+        <img src="Spark Certification_page-0001.jpg" alt="Spark Certification">
+        <h3>Spark Fundamentals</h3>
+        <p>Building a strong foundation in distributed data processing, Spark architecture, and working with large-scale datasets.</p>
+        <div class="cert-nav">
+          <label for="cert1">Next</label>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
 
       <!-- Experience Card -->
       <div class="card">
